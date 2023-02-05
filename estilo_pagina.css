@@ -45,3 +45,34 @@ body{
     grid-template-rows: auto auto auto;
     grid-gap: 10px 15px;
 }
+
+/* Grid-Column-Start e End, Grid-Row-Start e End, Grid-Column e Grid-Row */
+.column-start-end{
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    grid-gap: 10px 15px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.row-start-end{
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    grid-gap: 10px 15px;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.grid-column{
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    grid-gap: 10px 15px;
+    grid-column: 1 / 4;
+}
+
+.grid-row{
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    grid-gap: 10px 15px;
+    grid-row: 1 / 4;
+}
