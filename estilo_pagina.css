@@ -1,0 +1,17 @@
+body{
+    background-color: whitesmoke;
+    color: black;
+}
+
+.conteiner{
+    display: grid;
+    font-size: 25px;
+    color: black;
+    font-weight: bold;
+    border: 2px solid black;
+    align-content: center;
+}
+
+.grid-columns{
+    grid-template-columns: auto auto auto;
+}
