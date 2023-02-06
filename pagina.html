@@ -16,8 +16,9 @@
         Grid Layout permite organizar os elementos de uma página HTML dentro de "grades", onde é possível manipular e posicionar as grades da forma que desejar. <br />
         O uso do Grid é bem parecido com o Flex e ambos compartilham dos mesmos atributos para organização (align-items, justify content e etc...)
       </p>
-      <hr>
+      <hr />
       <h2>Columns e Rows</h2>
+      <div class="blocos">
         <h3>Grid-Template-Columns</h3>
         <p>Permite que você determine a <b>Quantidade</b> e <b>Tamanho</b> das colunas</p>
         <p>Neste exemplo será utilizada <b>3 colunas</b> com o tamanho:auto (padrão)</p>
@@ -46,108 +47,128 @@
           <div class="items">Item 8</div>
           <div class="items">Item 9</div>
         </div>
-        <hr>
-        <h2>GAP</h2>
+      </div>
+      <hr />
+      <h2>GAP</h2>
+      <div class="blocos">
         <h3>Grid-Column-Gap</h3>
         <p>Permite definir um tamanho para o espaçamento entre as colunas</p>
         <p>Neste exemplo o espaçamento será de <b>10px</b></p>
         <div class="conteiner gap-column">
-            <div class="items">Item 1</div>
-            <div class="items">Item 2</div>
-            <div class="items">Item 3</div>
-            <div class="items">Item 4</div>
-            <div class="items">Item 5</div>
-            <div class="items">Item 6</div>
-            <div class="items">Item 7</div>
-            <div class="items">Item 8</div>
-            <div class="items">Item 9</div>
-          </div>
-          <h3>Grid-Row-Gap</h3>
-          <p>Permite definir um tamanho para o espaçamento entre as linhas</p>
-          <p>Neste exemplo o espaçamento será de <b>5px</b></p>
-          <div class="conteiner gap-row">
-            <div class="items">Item 1</div>
-            <div class="items">Item 2</div>
-            <div class="items">Item 3</div>
-            <div class="items">Item 4</div>
-            <div class="items">Item 5</div>
-            <div class="items">Item 6</div>
-            <div class="items">Item 7</div>
-            <div class="items">Item 8</div>
-            <div class="items">Item 9</div>
-          </div>
-          <h3>Grid-Gap</h3>
-          <p>Permite definir um espaçamento para a <b>coluna</b> e para a <b>linha</b> ao mesmo tempo</p>
-          <p>Neste exemplo o espaçamento da <b>coluna</b> será de <b>15px</b> e o da <b>linha</b> será de <b>10px</b></p>
-          <div class="conteiner gap">
-            <div class="items">Item 1</div>
-            <div class="items">Item 2</div>
-            <div class="items">Item 3</div>
-            <div class="items">Item 4</div>
-            <div class="items">Item 5</div>
-            <div class="items">Item 6</div>
-            <div class="items">Item 7</div>
-            <div class="items">Item 8</div>
-            <div class="items">Item 9</div>
-          </div>
-          <hr>
-          <h2>Grid-Column-Start e End, Grid-Row-Start e End, Grid-Column e Grid-Row</h2>
-          <h3>Grid-Column-Start e End</h3>
-          <p>Permite que você expanda a coluna para que ela ocupe um determinado espaço. É necessário criar uma classe dentro do elemento que deseja expandir</p>
-          <p>Neste exemplo vamos utilizar o <b>Grid-Column-Start</b> na posição <b>1</b> e o <b>Grid-Column-End</b> na posição <b>3</b></p>
-          <div class="conteiner column-start-end">
-            <div class="items column-start-end">Item 1</div>
-            <div class="items">Item 2</div>
-            <div class="items">Item 3</div>
-            <div class="items">Item 4</div>
-            <div class="items">Item 5</div>
-            <div class="items">Item 6</div>
-            <div class="items">Item 7</div>
-            <div class="items">Item 8</div>
-            <div class="items">Item 9</div>
-          </div>
-          <h3>Grid-Row-Start e End</h3>
-          <p>Permite que você expanda a linha para que ela ocupe um determinado espaço. É necessário criar uma classe dentro do elemento que deseja expandir</p>
-          <p>Neste exemplo vamos utilizar o <b>Grid-Row-Start</b> na posição <b>1</b> e o <b>Grid-Rows-End</b> na posição <b>3</b></p>
-          <div class="conteiner row-start-end">
-            <div class="items row-start-end">Item 1</div>
-            <div class="items">Item 2</div>
-            <div class="items">Item 3</div>
-            <div class="items">Item 4</div>
-            <div class="items">Item 5</div>
-            <div class="items">Item 6</div>
-            <div class="items">Item 7</div>
-            <div class="items">Item 8</div>
-            <div class="items">Item 9</div>
-          </div>
-          <h3>Grid-Column</h3>
-          <p>É uma operação resumida onde é possível definir o inicio e o fim no mesmo comando</p>
-          <p>Neste exemplo vamos definir que o inicio da expansão da coluna será na posição <b>1</b> e ira até a posição <b>4</b></p>
-          <div class="conteiner grid-column">
-            <div class="items grid-column">Item 1</div>
-            <div class="items">Item 2</div>
-            <div class="items">Item 3</div>
-            <div class="items">Item 4</div>
-            <div class="items">Item 5</div>
-            <div class="items">Item 6</div>
-            <div class="items">Item 7</div>
-            <div class="items">Item 8</div>
-            <div class="items">Item 9</div>
-          </div>
-          <h3>Grid-Row</h3>
-          <p>É uma operação resumida onde é possível definir o inicio e o fim no mesmo comando</p>
-          <p>Neste exemplo vamos definir que o inicio da expansão da linha será na posição <b>1</b> e ira até a posição <b>4</b></p>
-          <div class="conteiner grid-row">
-            <div class="items grid-row">Item 1</div>
-            <div class="items">Item 2</div>
-            <div class="items">Item 3</div>
-            <div class="items">Item 4</div>
-            <div class="items">Item 5</div>
-            <div class="items">Item 6</div>
-            <div class="items">Item 7</div>
-            <div class="items">Item 8</div>
-            <div class="items">Item 9</div>
-          </div>
+          <div class="items">Item 1</div>
+          <div class="items">Item 2</div>
+          <div class="items">Item 3</div>
+          <div class="items">Item 4</div>
+          <div class="items">Item 5</div>
+          <div class="items">Item 6</div>
+          <div class="items">Item 7</div>
+          <div class="items">Item 8</div>
+          <div class="items">Item 9</div>
+        </div>
+        <h3>Grid-Row-Gap</h3>
+        <p>Permite definir um tamanho para o espaçamento entre as linhas</p>
+        <p>Neste exemplo o espaçamento será de <b>5px</b></p>
+        <div class="conteiner gap-row">
+          <div class="items">Item 1</div>
+          <div class="items">Item 2</div>
+          <div class="items">Item 3</div>
+          <div class="items">Item 4</div>
+          <div class="items">Item 5</div>
+          <div class="items">Item 6</div>
+          <div class="items">Item 7</div>
+          <div class="items">Item 8</div>
+          <div class="items">Item 9</div>
+        </div>
+        <h3>Grid-Gap</h3>
+        <p>Permite definir um espaçamento para a <b>coluna</b> e para a <b>linha</b> ao mesmo tempo</p>
+        <p>Neste exemplo o espaçamento da <b>coluna</b> será de <b>15px</b> e o da <b>linha</b> será de <b>10px</b></p>
+        <div class="conteiner gap">
+          <div class="items">Item 1</div>
+          <div class="items">Item 2</div>
+          <div class="items">Item 3</div>
+          <div class="items">Item 4</div>
+          <div class="items">Item 5</div>
+          <div class="items">Item 6</div>
+          <div class="items">Item 7</div>
+          <div class="items">Item 8</div>
+          <div class="items">Item 9</div>
+        </div>
+      </div>
+      <hr />
+      <h2>Grid-Column-Start e End, Grid-Row-Start e End, Grid-Column, Grid-Row e Grid-Area</h2>
+      <div class="blocos">
+        <h3>Grid-Column-Start e End</h3>
+        <p>Permite que você expanda a coluna para que ela ocupe um determinado espaço. É necessário criar uma classe dentro do elemento que deseja expandir</p>
+        <p>Neste exemplo vamos utilizar o <b>Grid-Column-Start</b> na posição <b>1</b> e o <b>Grid-Column-End</b> na posição <b>3</b></p>
+        <div class="conteiner column-start-end">
+          <div class="items column-start-end">Item 1</div>
+          <div class="items">Item 2</div>
+          <div class="items">Item 3</div>
+          <div class="items">Item 4</div>
+          <div class="items">Item 5</div>
+          <div class="items">Item 6</div>
+          <div class="items">Item 7</div>
+          <div class="items">Item 8</div>
+          <div class="items">Item 9</div>
+        </div>
+        <h3>Grid-Row-Start e End</h3>
+        <p>Permite que você expanda a linha para que ela ocupe um determinado espaço. É necessário criar uma classe dentro do elemento que deseja expandir</p>
+        <p>Neste exemplo vamos utilizar o <b>Grid-Row-Start</b> na posição <b>1</b> e o <b>Grid-Rows-End</b> na posição <b>3</b></p>
+        <div class="conteiner row-start-end">
+          <div class="items row-start-end">Item 1</div>
+          <div class="items">Item 2</div>
+          <div class="items">Item 3</div>
+          <div class="items">Item 4</div>
+          <div class="items">Item 5</div>
+          <div class="items">Item 6</div>
+          <div class="items">Item 7</div>
+          <div class="items">Item 8</div>
+          <div class="items">Item 9</div>
+        </div>
+        <h3>Grid-Column</h3>
+        <p>É uma operação resumida onde é possível definir o inicio e o fim no mesmo comando</p>
+        <p>Neste exemplo vamos definir que o inicio da expansão da coluna será na posição <b>1</b> e ira até a posição <b>4</b></p>
+        <div class="conteiner grid-column">
+          <div class="items grid-column">Item 1</div>
+          <div class="items">Item 2</div>
+          <div class="items">Item 3</div>
+          <div class="items">Item 4</div>
+          <div class="items">Item 5</div>
+          <div class="items">Item 6</div>
+          <div class="items">Item 7</div>
+          <div class="items">Item 8</div>
+          <div class="items">Item 9</div>
+        </div>
+        <h3>Grid-Row</h3>
+        <p>É uma operação resumida onde é possível definir o inicio e o fim no mesmo comando</p>
+        <p>Neste exemplo vamos definir que o inicio da expansão da linha será na posição <b>1</b> e ira até a posição <b>4</b></p>
+        <div class="conteiner grid-row">
+          <div class="items grid-row">Item 1</div>
+          <div class="items">Item 2</div>
+          <div class="items">Item 3</div>
+          <div class="items">Item 4</div>
+          <div class="items">Item 5</div>
+          <div class="items">Item 6</div>
+          <div class="items">Item 7</div>
+          <div class="items">Item 8</div>
+          <div class="items">Item 9</div>
+        </div>
+        <h3>Grid-Area</h3>
+        <p>É uma operação resumida onde é possível definir o inicio e o fim no mesmo comando</p>
+        <p>Neste exemplo é preciso definir a posição inicio linha / posição inicio coluna / posição final linha / posição final coluna</p>
+        <p>Sintaxe do exemplo: <b>grid-area: 1 / 1 / 4 / 3;</b></p>
+        <div class="conteiner grid-area">
+          <div class="items grid-area">Item 1</div>
+          <div class="items">Item 2</div>
+          <div class="items">Item 3</div>
+          <div class="items">Item 4</div>
+          <div class="items">Item 5</div>
+          <div class="items">Item 6</div>
+          <div class="items">Item 7</div>
+          <div class="items">Item 8</div>
+          <div class="items">Item 9</div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
